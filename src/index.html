@@ -21,7 +21,7 @@
       <form action="" id="form">
         <fieldset>
           <p>Time</p>
-          <div class="input-block">
+          <div class="input-block time">
             <label for="start-time">Start</label>
             <input type="time" name="start-time" id="start-time" />
 
@@ -32,7 +32,7 @@
 
         <fieldset>
            <p>Date</p> 
-           <div class="input-block">
+           <div class="input-block date">
             <label for="day">Day</label>
         <input type="number" name="day" id="day" />
         <label for="month">Month</label>
@@ -40,13 +40,13 @@
         <label for="year">Year</label>
         <input type="number" name="year" id="year" />
            </div>
-
         </fieldset>
         
+        <fieldset>
+          <p>Activity</p>
+            <input type="text" name="activity-name" id="activity-name" />
+        </fieldset>
         
-        <p>Activity</p>
-        <input type="text" name="activity-name" id="activity-name" />
-
         <button type="submit" id="add-activity">Add Activity</button>
       </form>
     </main>
