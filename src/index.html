@@ -1,36 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Track Your Time</title>
-</head>
-<body>
-    <div class="logo">logo</div>
-    <h1>Track Your Time</h1>
-    <a href="index.html"><h4>Add Activity</h4></a>
-    <a href="view-activity.html"><h4>View Activities</h4></a>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo">logo</div>
+      <h1 id="title">Track Your Time</h1>
+    </header>
 
-    
-    <p>Time</p>
-    <p>Start</p>
-    <input type="time" name="start-time" id="start-time">
-    <p>End</p>
-    <input type="time" name="end-time" id="end-time">
+    <aside>
+      <a href="index.html"><h4>Add Activity</h4></a>
+      <a href="view-activity.html"><h4>View Activities</h4></a>
+    </aside>
 
-    <p>Date</p>
-    <p>Day</p>
-    <input type="number" name="day" id="day">
-    <p>Month</p>
-    <input type="number" name="month" id="month">
-    <p>Year</p>
-    <input type="number" name="year" id="year">
-    
-    <p>Activity</p>
-    <input type="text" name="activity-name" id="activity-name">
+    <main>
+      <form action="" id="form">
+        <fieldset>
+          <p>Time</p>
+          <div class="input-block">
+            <label for="start-time">Start</label>
+            <input type="time" name="start-time" id="start-time" />
 
-    <button type="submit" id="add-activity">Add Activity</button>
+            <label for="end-time">End</label>
+            <input type="time" name="end-time" id="end-time" />
+          </div>
+        </fieldset>
+
+        <fieldset>
+           <p>Date</p> 
+           <div class="input-block">
+            <label for="day">Day</label>
+        <input type="number" name="day" id="day" />
+        <label for="month">Month</label>
+        <input type="number" name="month" id="month" />
+        <label for="year">Year</label>
+        <input type="number" name="year" id="year" />
+           </div>
+
+        </fieldset>
+        
+        
+        <p>Activity</p>
+        <input type="text" name="activity-name" id="activity-name" />
+
+        <button type="submit" id="add-activity">Add Activity</button>
+      </form>
+    </main>
 
     <script src="index-script.js"></script>
-</body>
+  </body>
 </html>

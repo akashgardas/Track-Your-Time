@@ -1,0 +1,95 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+    'header header header header header header'
+    'sidebar main main main main main';
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(187, 187, 187);
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 20px;
+}
+
+header #logo {
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+}
+
+header #title {
+    background-color: rgb(172, 172, 172);
+    font-size: 40px;
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: rgba(0, 119, 255, 0.816);
+}
+aside a {
+    text-decoration: none;
+}
+
+aside h4 {
+    background-color: rgb(182, 219, 248);
+    margin: 10px;
+    padding: 10px;
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(182, 219, 248);
+    padding: 70px 150px;
+}
+
+#form {
+    background-color: white;
+    padding: 40px;  
+}
+
+#form fieldset {
+    background-color: rgb(208, 208, 208);
+    display: flex;
+    gap: 10px;
+}
+
+fieldset * {
+    margin: 0;
+}
+
+fieldset p {
+    display: inline;
+    background-color: gray;
+    width: 20%;
+    text-align: center;
+    font-size: larger;
+}
+
+.input-block {
+    background-color: gray;
+    flex-grow: 1;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 10px;
+}
+
+label {
+    background-color: rgb(51, 89, 172);
+    text-align: center;
+    padding: 5px;
+}
+
+fieldset input {
+    background-color: rgb(127, 208, 255);
+}
