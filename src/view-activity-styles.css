@@ -1,0 +1,80 @@
+table {
+    background-color: rgb(254, 254, 255);
+    width: 100%;
+    table-layout: fixed;
+}
+
+table * {
+    border-radius: 3px;
+
+    padding: 0.2rem 0.4rem;
+    vertical-align: center;
+    text-align: center;
+}
+
+thead #date {
+    width: 8rem;
+    max-width: fit-content;
+}
+
+thead #time {
+    width: 10rem;
+    max-width: fit-content;
+}
+
+thead #action {
+    width: 10rem;
+}
+
+thead * {
+    border: 1px solid rgba(124, 124, 124, 0.693);
+    background-color: rgba(0, 140, 255, 0.3);
+
+    font-size: 1.1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+tbody *{
+    border: 1px solid rgba(186, 186, 186, 0.693);
+    font-family: tahoma;
+    font-size: 1rem;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(255, 0, 0, 0.3);
+}
+tbody tr:nth-child(even) {
+    background-color: rgba(0, 255, 0, 0.3);
+}
+
+#action {
+    background-color: whitesmoke;
+}
+
+.action {
+    background-color: ghostwhite;
+}
+
+.edit {
+    background-color: rgba(1, 159, 1, 0.85);
+    border: 1px solid green;
+    transition-property: width;
+    transition-duration: 10ms;
+}
+
+.edit:hover {
+    background-color: rgba(2, 144, 2, 0.921);
+    transform: scale(1.05);
+}
+
+.delete {
+    background-color: rgba(241, 26, 26, 0.8);
+    border: 1px solid red;
+    transition-property: width;
+    transition-duration: 10ms;
+}
+
+.delete:hover {
+    background-color: rgba(255, 0, 0);
+    transform: scale(1.05);
+}
