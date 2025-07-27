@@ -3,7 +3,11 @@
 /*
 1. Button click should get the data from the form.
 2. Clear the form inputs when data is taken.
+3. TODO: Storage
+  - Store the data
  */
+
+// Data validation
 
 const formEle = document.getElementById("form");
 
