@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+#editView {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#editView #form {
+    width: 50rem;
+
+    background-color: rgb(217, 217, 217);
+    box-shadow: 0px 0px 0.5rem rgb(0, 0, 0);
+}
+
+#editView button {
+    margin: 0 1rem;
+}
+
+#editView .buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#editView #save {
+    background-color: rgb(4, 193, 4);
+}
+
+#editView #cancel {
+    background-color: rgb(241, 49, 49);
+}
+
+.hidden {
+    visibility: hidden;
+}

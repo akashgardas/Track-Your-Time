@@ -6,6 +6,7 @@
     <title>Track Your Time</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="view-activity-styles.css" />
+    <link rel="stylesheet" href="edit-view-styles.css" />
   </head>
   <body>
     <header>
@@ -52,12 +53,48 @@
             <td class="action">
               <button type="button" class="edit">Edit</button>
               <button type="button" class="delete">Delete</button>
-            </td> -->
-          </tr>
+            </td> 
+          </tr>-->
         </tbody>
       </table>
-    </main>
 
+      <section id="editView" class="hidden">
+        <form action="" id="form" method="get">
+          <fieldset>
+            <p>Time</p>
+            <div class="input-block time">
+              <label for="start-time">Start</label>
+              <input type="time" name="startTime" id="start-time" />
+
+              <label for="end-time">End</label>
+              <input type="time" name="endTime" id="end-time" />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <p>Date</p>
+            <div class="input-block date">
+              <label for="day">Day</label>
+              <input type="number" name="day" id="day" />
+              <label for="month">Month</label>
+              <input type="number" name="month" id="month" />
+              <label for="year">Year</label>
+              <input type="number" name="year" id="year" />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <p>Activity</p>
+            <input type="text" name="activityName" id="activity-name" />
+          </fieldset>
+
+          <div class="buttons">
+            <button type="submit" id="save">Save</button>
+            <button type="button" id="cancel">Cancel</button>
+          </div>
+        </form>
+      </section>
+    </main>
     <script src="view-activity-script.js"></script>
   </body>
 </html>
