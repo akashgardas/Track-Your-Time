@@ -83,8 +83,13 @@ const addRow = function (date, startTime, endTime, activity) {
 
 const addActionButtons = (cell) => {
     cell.classList.add('action');
-    cell.innerHTML = `<button type="button" class="edit">Edit</button>
+    cell.innerHTML = `<button onclick="document.querySelector('#editView').classList.remove('hidden')" type="button" class="edit">Edit</button>
 <button type="button" class="delete">Delete</button>`;
 };
 
 loadData();
+
+const cancelButton = document.getElementById('cancel');
+cancelButton.addEventListener('click', () => {
+  document.querySelector('#editView').classList.add('hidden');
+});
